@@ -16,7 +16,7 @@ Business Use Case: This pipeline allows you to retrieve any 3rd Party Amazon Sel
    - S3 (Storage zones for incoming data)
    - Lambda (Data transformations and pushing data along the S3 buckets)
    - Redshift (Data Warehouse)
-   - QuickSight (Data Visualization
+   - QuickSight (Data Visualization)
 4. Apache Airflow (Orchestrates the ETL pipeline)
 
 ## Data Flow
