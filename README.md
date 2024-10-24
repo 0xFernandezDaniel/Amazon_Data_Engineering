@@ -6,4 +6,4 @@ This project dives into the world of Amazon data analytics using modern data eng
 Business Use Case: With this code, you can retrieve any 3rd Party Amazon Seller's catalog, have it pulled into your database, and programatically check whether your vendor has those items available.
 
 ## Architecture
-![Project Architecture](architecture.pdf)]
+![Project Architecture](architecture.jpeg)
