@@ -10,7 +10,7 @@ Business Use Case: This pipeline allows you to retrieve any 3rd Party Amazon Sel
 
 ## Tech Stack
 1. Python (Pipeline development & API integration)
-2. SQL (Defining Redshift table structure (DDL) and Stored Procedures to perform joins)
+2. SQL (Defining Redshift table structure (DDL) and stored procedures to perform joins)
 3. AWS Cloud
    - EC2 (Hosts Apache Airflow instance)
    - S3 (Storage zones for incoming data)
