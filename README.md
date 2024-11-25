@@ -3,7 +3,7 @@
 ## Introduction
 This project explores Amazon data using modern data engineering practices on AWS. I developed a data pipeline to extract, transform, and load product data from a 3rd Party API into Amazon Redshift for scalable analysis.
 
-Business Use Case: This pipeline allows you to retrieve any 3rd Party Amazon Seller's catalog, ingest it into your database, and programmatically verify whether your distributor has those products available, streamlining the sourcing process.
+Business Use Case: This pipeline allows you to retrieve any 3rd Party Amazon Seller's catalog, ingest it into a database, and programmatically verify whether your distributor has those products available, streamlining the sourcing process.
 
 ## Architecture
 ![Project Architecture](architecture.jpeg)
