@@ -26,3 +26,7 @@ Business Use Case: This pipeline allows you to retrieve any 3rd Party Amazon Sel
 - The "transformation-convert-to-csv-lamdaFunction" waits for the object to exist in the second S3 bucket, and then performs data cleaning, specifies columns to include, converts the JSON into a CSV, and uploads the object into the final S3 bucket.
 - Airflow task "is_file_in_s3_available" uses the S3KeySensor operator to check whether the CSV exists in the final S3 bucket every 5 seconds. (timeout is set to 60 seconds but can be adjusted as needed)
 - Airflow task "transfer_s3_to_redshift" uses the S3ToRedshiftOperator to load the CSV into the data warehouse, Redshift.
+
+## Table Structure
+
+
