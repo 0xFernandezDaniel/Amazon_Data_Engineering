@@ -29,4 +29,4 @@ Business Use Case: This pipeline allows you to retrieve any 3rd Party Amazon Sel
 
 ## Table Structure
 
-![amazon_data](struct.jpeg)
+![amazon_data](struct.png)
