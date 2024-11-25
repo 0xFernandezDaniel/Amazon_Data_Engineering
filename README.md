@@ -19,6 +19,9 @@ Business Use Case: This pipeline allows you to retrieve any 3rd Party Amazon Sel
    - QuickSight (Data Visualization)
 4. Apache Airflow (Orchestrates the ETL pipeline)
 
+## Prequisites
+- Supplier product table with an ASIN column. This can be achieved by utilizing the same third party API, under the ASIN to GTIN endpoint.
+
 ## Data Flow
 - The pipeline calls the API, retrieving a JSON of product data from a specified seller’s catalog. The data is extracted page by page, and each page is processed individually. (Each API call results in a maximum of 48 products, therefore, adjust the "num_pages" value as needed for each storefront.)
 - Then, the JSON is sent to the first S3 bucket via the BashOperator in the "load_to_s3" task.
