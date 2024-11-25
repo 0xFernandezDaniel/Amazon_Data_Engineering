@@ -35,3 +35,5 @@ Business Use Case: This pipeline allows you to retrieve any 3rd Party Amazon Sel
 
 ## Stored Procedure
 ![amazon_data](StoredProcedureFindMatches.png)
+
+![amazon_data](lambda_transformation.py)
