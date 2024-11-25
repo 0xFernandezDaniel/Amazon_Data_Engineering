@@ -32,3 +32,4 @@ Business Use Case: This pipeline allows you to retrieve any 3rd Party Amazon Sel
 ![amazon_data](struct.png)
 
 ## Stored Procedure
+![amazon_data](StoredProcedureFindMatches.png)
