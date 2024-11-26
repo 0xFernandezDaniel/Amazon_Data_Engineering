@@ -41,7 +41,7 @@ This stored procedure performs joins on the ASIN field, dynamically verifying th
 
 ## What's Next:
 
-- I will implement advanced analytics dashboards using Amazon Quicksights to show which third-party sellers have the highest number of ASIN matches, which distributors have the highest number of ASIN matches, and which ASINs are the best-sellers and most profitable.
+- I will implement advanced analytics dashboards using Amazon Quicksight to show which third-party sellers have the highest number of ASIN matches, which distributors have the highest number of ASIN matches, and which ASINs are the best-sellers and most profitable.
 - Expand the pipeline to support real-time data ingestion for faster decision-making, using Kafka.
 - Use Docker to containerize the pipeline components, ensuring consistent deployment across different environments. This will simplify the setup process, improve scalability, and enable integration with Kubernetes for orchestration.
 - Automate reporting and notifications to alert about changes in product availability, pricing, or demand trends.
