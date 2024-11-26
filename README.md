@@ -1,6 +1,6 @@
 # Amazon Data Pipeline with Apache Airflow
 
-## Introduction
+## Overview
 This project demonstrates the use of modern data engineering practices to analyze Amazon data using AWS services. I developed a robust ETL (Extract, Transform, Load) pipeline that ingests product data from a third-party API and loads it into Amazon Redshift, enabling scalable analysis and streamlined decision-making.
 
 Business Use Case: This pipeline allows businesses to extract any Amazon Seller's catalog, ingest the data into a database, and programmatically verify product availability with distributors. By automating and optimizing this process, the pipeline saves significant time and effort in sourcing profitable products.
