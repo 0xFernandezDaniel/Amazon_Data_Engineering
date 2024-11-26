@@ -5,6 +5,8 @@ This project demonstrates the use of modern data engineering practices to analyz
 
 Business Use Case: This pipeline allows businesses to extract any Amazon Seller's catalog, ingest the data into a database, and programmatically verify product availability with distributors. By automating and optimizing this process, the pipeline saves significant time and effort in sourcing profitable products.
 
+All of the code can be found in the files provided in this repository. If you have any questions or need help using this pipeline, let me know!
+
 ## Architecture
 ![Project Architecture](architecture.jpeg)
 
