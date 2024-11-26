@@ -1,9 +1,9 @@
 # Amazon Data Pipeline with Apache Airflow
 
 ## Introduction
-This project explores Amazon data using modern data engineering practices on AWS. I developed a data pipeline to extract, transform, and load product data from a 3rd Party API into Amazon Redshift for scalable analysis.
+This project demonstrates the use of modern data engineering practices to analyze Amazon data using AWS services. I developed a robust ETL (Extract, Transform, Load) pipeline that ingests product data from a third-party API and loads it into Amazon Redshift, enabling scalable analysis and streamlined decision-making.
 
-Business Use Case: This pipeline allows you to retrieve any 3rd Party Amazon Seller's catalog, ingest it into a database, and programmatically verify whether your distributor has those products available, streamlining the sourcing process.
+Business Use Case: This pipeline allows businesses to extract any Amazon Seller's catalog, ingest the data into a database, and programmatically verify product availability with distributors. By automating and optimizing this process, the pipeline saves significant time and effort in sourcing profitable products.
 
 ## Architecture
 ![Project Architecture](architecture.jpeg)
@@ -19,7 +19,7 @@ Business Use Case: This pipeline allows you to retrieve any 3rd Party Amazon Sel
 4. Apache Airflow (Orchestrates the ETL pipeline)
 
 ## Prequisites
-- Supplier product table with an ASIN column. This can be achieved by utilizing the same third party API, under the ASIN to GTIN endpoint.
+- Your distributor’s product catalog should include an ASIN column for matching against the retrieved data. This can be achieved using the same third-party API under the ASIN-to-GTIN endpoint.
 
 ## Data Flow
 - The pipeline calls the API, retrieving a JSON of product data from a specified seller’s catalog. The data is extracted page by page, and each page is processed individually. (Each API call results in a maximum of 48 products, therefore, adjust the "num_pages" value as needed for each storefront.)
@@ -35,4 +35,11 @@ Business Use Case: This pipeline allows you to retrieve any 3rd Party Amazon Sel
 
 ## Stored Procedure
 ![amazon_data](StoredProcedureFindMatches.png)
+This stored procedure performs joins on the ASIN field, dynamically verifying the availability of products with distributors. It automates matching tasks that would otherwise require manual intervention, saving over 40 hours per week in product sourcing efforts.
 
+## What's Next:
+
+- I will implement advanced analytics dashboards using Amazon Quicksights to show which third-party sellers have the highest number of ASIN matches, which distributors have the highest number of ASIN matches, and which ASINs are the best-sellers and most profitable.
+- Expand the pipeline to support real-time data ingestion for faster decision-making, using Kafka.
+- Use Docker to containerize the pipeline components, ensuring consistent deployment across different environments. This will simplify the setup process, improve scalability, and enable integration with Kubernetes for orchestration.
+- Automate reporting and notifications to alert about changes in product availability, pricing, or demand trends.
